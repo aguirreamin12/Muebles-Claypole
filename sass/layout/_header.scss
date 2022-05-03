@@ -1,0 +1,13 @@
+.navbar{
+    background-color: $col-ora;
+}
+
+.imagen-logo{
+    @include logo-size;
+}
+
+@media screen and (max-width: 388px){
+    .imagen-logo{
+        display: none;
+    }
+}

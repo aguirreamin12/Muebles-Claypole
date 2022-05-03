@@ -1,0 +1,585 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fredoka', sans-serif;
+}
+
+.navbar {
+  background-color: orange;
+}
+
+.imagen-logo {
+  height: 90px;
+  width: 90px;
+}
+
+@media screen and (max-width: 388px) {
+  .imagen-logo {
+    display: none;
+  }
+}
+
+.pieDepagina {
+  display: -ms-grid;
+  display: grid;
+  height: 88px;
+  align-items: center;
+  background-color: orange;
+  color: black;
+  grid-template-areas: "ubicacion derechos redes-sociales";
+}
+
+.pieDepagina p {
+  font-weight: 500;
+}
+
+.pieDepagina a {
+  text-decoration: none;
+  color: black;
+}
+
+.pieDepagina .ubicacion, .pieDepagina .derechos, .pieDepagina .redes-sociales {
+  grid-area: 'ubicacion';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  height: 20px;
+}
+
+.pieDepagina .derechos {
+  grid-area: 'derechos';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pieDepagina .redes-sociales {
+  grid-area: 'redes-sociales';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 15px;
+}
+
+/*mediaqueries*/
+@media screen and (max-width: 480px) {
+  .redes-sociales i {
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 405px) {
+  .pieDepagina {
+    height: 124px;
+  }
+}
+
+@media screen and (max-width: 336px) {
+  .pieDepagina {
+    height: 172px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .pieDepagina {
+    height: 172px;
+  }
+}
+
+.principal {
+  height: 80vh;
+  background-color: #fffcea;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+
+.principal .contenido {
+  grid-column: 9/12;
+  grid-row: 2/9;
+  color: black;
+}
+
+.principal h1 {
+  font-size: 20px;
+  font-weight: 550;
+}
+
+.principal h2 {
+  font-size: 35px;
+  color: #cd7400;
+  text-transform: uppercase;
+}
+
+.principal p {
+  font-weight: 200;
+}
+
+.principal .botton {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  background: none;
+  color: black;
+  padding: 10px 20px;
+  border: solid 2px black;
+  border-radius: 15px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: height 2s, width 1s;
+}
+
+.principal .botton:hover {
+  transform: scale(1.1, 1.1);
+}
+
+/*mediaqueries*/
+@media screen and (max-width: 759px) {
+  .principal .contenido {
+  grid-column: 7/12;
+  grid-row: 2/7;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .principal .contenido {
+  grid-column: 8/12;
+  grid-row: 2/7;
+  }
+}
+
+@media screen and (max-width: 569px) {
+  .principal .contenido {
+    grid-column: 7/12;
+    grid-row: 2/7;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .principal .contenido {
+    grid-column: 7/12;
+    grid-row: 2/8;
+  }
+}
+
+@media screen and (max-width: 455px) {
+  .principal .contenido {
+    grid-column: 6/12;
+    grid-row: 2/8;
+  }
+}
+
+@media screen and (max-width: 379px) {
+  .principal .contenido {
+    grid-column: 5/12;
+    grid-row: 2/8;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .principal .contenido {
+    grid-column: 4/12;
+    grid-row: 2/8;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .principal .contenido {
+    grid-column: 4/12;
+    grid-row: 2/8;
+  }
+}
+
+.principal-productos {
+  background-color: #eff3f6;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+
+.principal-productos h2 {
+  padding: 15px;
+}
+
+.principal-productos section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+
+.principal-productos .card {
+  width: 33.333333%;
+}
+
+.principal-productos .estilo-a {
+  font-family: sans-serif;
+}
+
+.principal-productos .estilo-a a {
+  text-decoration: none;
+  color: black;
+}
+
+.principal-productos .estilo-a .img-container {
+  overflow: hidden;
+  height: 400px;
+  position: relative;
+}
+
+.principal-productos .estilo-a .img-container img {
+  width: 100%;
+  position: absolute;
+  top: -25%;
+  transition: all 0.5s;
+}
+
+.principal-productos .estilo-a:hover .img-container img {
+  transform: scale(1.2);
+}
+
+/*mediaqueries*/
+@media screen and (max-width: 768px) {
+  .img-container img {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .img-container img {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .img-container img {
+    height: 90%;
+    width: 100%;
+  }
+}
+
+.principal-historia {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  background-color: #eff3f6;
+}
+
+.principal-historia .titulo-historia {
+  grid-column: 9/12;
+  grid-row: 2/2;
+  border: solid 2px black;
+  border-radius: 3px;
+  text-align: center;
+  background-color: aliceblue;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.principal-historia .contenido-historia {
+  grid-column: 2/5;
+  grid-row: 2/11;
+  border: solid 2px black;
+  border-radius: 3px;
+  text-align: center;
+  background-color: aliceblue;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.principal-historia .imagen-historia {
+  grid-column: 6/12;
+  grid-row: 3/10;
+}
+
+.principal-historia img {
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 20px;
+  border: solid 2px black;
+}
+
+@media screen and (max-width: 768px) {
+  .principal-historia .contenido-historia {
+    grid-column: 2/8;
+    grid-row: 3/8;
+  }
+  .principal-historia .imagen-historia {
+    grid-column: 6/12;
+    grid-row: 9/12;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .principal .titulo-historia {
+    grid-column: 4/11;
+    font-size: 15px;
+    background-color: white;
+    border: solid 2px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .principal .texto-historia {
+    grid-column: 5/11;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 25px;
+    background-color: white;
+    font-size: 18px;
+    border: solid 2px black;
+    border-radius: 12px;
+    text-align: center;
+  }
+  .principal .imagen-historia {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .principal-historia .titulo-historia {
+    grid-column: 8/13;
+    place-items: center;
+  }
+  .principal-historia .contenido-historia {
+    grid-column: 2/8;
+    grid-row: 3/8;
+  }
+  .principal-historia .imagen-historia {
+    grid-column: 2/12;
+    grid-row: 8/12;
+  }
+  .principal-historia img {
+    height: 75%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .principal-historia img {
+    height: 60%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 362px) {
+  .principal-historia img {
+    height: 50%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .principal-historia .titulo-historia {
+    grid-column: 3/11;
+  }
+  .principal-historia .contenido-historia {
+    grid-column: 2/12;
+    grid-row: 3/8;
+  }
+  .principal-historia .imagen-historia {
+    grid-column: 1/13;
+    grid-row: 8/12;
+  }
+  .principal-historia img {
+    height: 50%;
+    width: 100%;
+  }
+}
+
+.principal-pregunta {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background-color: #eff3f6;
+}
+
+.principal-pregunta section {
+  text-align: center;
+}
+
+.principal-pregunta .container {
+  grid-column: 2/5;
+  grid-row: 1/2;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0;
+  cursor: pointer;
+}
+
+.principal-pregunta .container img {
+  width: 600px;
+  height: 200px;
+}
+
+.principal-pregunta .container1 {
+  grid-column: 2/5;
+  grid-row: 2/2;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0;
+  cursor: pointer;
+}
+
+.principal-pregunta .container1 img {
+  width: 600px;
+  height: 320px;
+}
+
+.principal-pregunta .container2 {
+  grid-column: 2/5;
+  grid-row: 3/3;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0;
+  cursor: pointer;
+}
+
+.principal-pregunta section:hover {
+  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
+}
+
+.principal-pregunta section h2, .principal-pregunta section p {
+  margin: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .principal-pregunta .container img {
+    width: 100%;
+    height: 320px;
+  }
+  .principal-pregunta .container1 img {
+    width: 100%;
+    height: 320px;
+  }
+  .principal-pregunta .container2 img {
+    width: 100%;
+    height: 320px;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .principal-pregunta .container img {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .principal-pregunta .container img {
+    width: 100%;
+    height: 260px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .principal-pregunta .container img {
+    width: 100%;
+    height: 220px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .principal-pregunta .container img {
+    width: 100%;
+    height: 150px;
+  }
+  .principal-pregunta .container1 img {
+    width: 100%;
+    height: 130px;
+  }
+  .principal-pregunta .container2 img {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+.principal-contacto {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  background-color: #eff3f6;
+}
+
+.principal-contacto section:hover {
+  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
+}
+
+.principal-contacto section {
+  grid-column: 2/5;
+  grid-row: 1/4;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0;
+  cursor: pointer;
+}
+
+.principal-contacto h2 {
+  text-decoration: underline;
+  text-align: center;
+}
+
+.principal-contacto .nombre {
+  text-align: center;
+  margin: 20px;
+}
+
+.principal-contacto .telefono {
+  text-align: center;
+  margin: 20px;
+}
+
+.principal-contacto .email {
+  text-align: center;
+  margin: 20px;
+}
+
+.principal-contacto .donde {
+  text-align: center;
+  margin: 20px;
+}
+
+.principal-contacto .novedades {
+  text-align: center;
+  margin: 20px;
+}
+
+.principal-contacto .comentarios {
+  text-align: center;
+  margin: 20px;
+}
+
+.principal-contacto .boton {
+  text-align: center;
+  margin: 20px;
+}
+
+@media screen and (max-width: 344px) {
+  section {
+    width: 240px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

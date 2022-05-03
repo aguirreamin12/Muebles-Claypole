@@ -1,0 +1,15 @@
+@import "utilities/colores";
+@import "utilities/maps";
+@import "utilities/mixins";
+
+@import "base/all";
+@import "base/typo";
+
+@import "layout/header";
+@import "layout/footer";
+
+@import "pages/home";
+@import "pages/productos";
+@import "pages/historia";
+@import "pages/frecuentes";
+@import "pages/contacto";

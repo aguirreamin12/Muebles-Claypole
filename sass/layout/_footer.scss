@@ -1,0 +1,64 @@
+.pieDepagina{
+    display: grid;
+    height: 88px;
+    align-items: center;
+    background-color: $col-ora;
+    color: black;
+    grid-template-areas: "ubicacion derechos redes-sociales";
+
+        p{
+        font-weight: 500;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .ubicacion{
+            grid-area: 'ubicacion';
+            display: flex;
+            justify-content: center;
+            height: map-get($estilosFooter, tamaño);
+        }
+
+        .derechos{
+            grid-area: 'derechos';
+            display: flex;
+            @extend .ubicacion;
+        }
+
+        .redes-sociales{
+            grid-area: 'redes-sociales';
+            display: flex;
+            justify-content: space-between;
+            padding-right: 15px;
+            @extend .ubicacion;
+        }
+}
+
+/*mediaqueries*/
+
+@media screen and (max-width: 480px){
+    .redes-sociales i{
+        padding-right: 30px;
+    }
+}
+
+@media screen and (max-width: 405px){
+    .pieDepagina{
+        height: 124px;
+    }
+}
+
+@media screen and (max-width: 336px){
+    .pieDepagina{
+        height: 172px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .pieDepagina{
+        height: 172px;
+    }
+}

@@ -1,0 +1,138 @@
+.principal-historia {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+    background-color: rgb(239, 243, 246);
+}
+
+
+.principal-historia .titulo-historia{
+    grid-column: 9/12;
+    grid-row: 2/2;
+    border: solid 2px black;
+    border-radius: 3px;
+    text-align: center;
+    background-color: aliceblue;
+    display: grid;
+    place-items: center;
+    }
+
+
+    .principal-historia .contenido-historia{
+    grid-column: 2/5;
+    grid-row: 2/11;
+    border: solid 2px black;
+    border-radius: 3px;
+    text-align: center;
+    background-color: aliceblue;
+    display: grid;
+    place-items: center;
+}
+
+    .principal-historia .imagen-historia{
+    grid-column: 6/12;
+    grid-row: 3/10;
+    }
+
+    .principal-historia img{
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 20px;
+    border: solid 2px black;
+}
+
+@media screen and (max-width: 768px){
+    .principal-historia .contenido-historia{
+        grid-column: 2/8;
+        grid-row: 3/8;
+    }
+
+    .principal-historia .imagen-historia{
+        grid-column: 6/12;
+        grid-row: 9/12;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .principal .titulo-historia {
+        grid-column: 4/11;
+        font-size: 15px;
+        background-color: white;
+        border: solid 2px;
+        border-radius: 5px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .principal .texto-historia{
+        grid-column: 5/11;
+        display: flex;
+        margin-left: 25px;
+        background-color: white;
+        font-size: 18px;
+        border: solid 2px rgb(0, 0, 0);
+        border-radius: 12px;
+        text-align: center;
+    }
+
+    .principal .imagen-historia{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .principal-historia .titulo-historia{
+        grid-column: 8/13;
+        place-items: center;
+    }
+
+    .principal-historia .contenido-historia{
+        grid-column: 2/8;
+        grid-row: 3/8;
+    }
+
+    .principal-historia .imagen-historia{
+        grid-column: 2/12;
+        grid-row: 8/12;
+    }
+
+    .principal-historia img{
+        height: 75%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .principal-historia img{
+        height: 60%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 362px){
+    .principal-historia img{
+        height: 50%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .principal-historia .titulo-historia{
+        grid-column: 3/11;
+    }
+
+    .principal-historia .contenido-historia{
+        grid-column: 2/12;
+        grid-row: 3/8;
+    }
+
+    .principal-historia .imagen-historia{
+        grid-column: 1/13;
+        grid-row: 8/12;
+    }
+
+    .principal-historia img{
+        height: 50%;
+        width: 100%;
+    }
+}
