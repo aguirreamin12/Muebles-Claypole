@@ -10,9 +10,8 @@
     grid-column: 9/12;
     grid-row: 2/2;
     border: solid 2px black;
-    border-radius: 3px;
+    border-radius: 10px;
     text-align: center;
-    background-color: aliceblue;
     display: grid;
     place-items: center;
     }
@@ -22,9 +21,8 @@
     grid-column: 2/5;
     grid-row: 2/11;
     border: solid 2px black;
-    border-radius: 3px;
+    border-radius: 10px;
     text-align: center;
-    background-color: aliceblue;
     display: grid;
     place-items: center;
 }
@@ -116,14 +114,18 @@
     }
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 344px){
     .principal-historia .titulo-historia{
-        grid-column: 3/11;
+        grid-column: 2/11;
+        grid-row: 2/2;
     }
 
     .principal-historia .contenido-historia{
         grid-column: 2/12;
         grid-row: 3/8;
+        border: none;
+        background-color: rgba(252, 250, 245, 0.459);
+        padding: 2px;
     }
 
     .principal-historia .imagen-historia{
@@ -132,7 +134,7 @@
     }
 
     .principal-historia img{
-        height: 50%;
+        height: 44%;
         width: 100%;
     }
 }
