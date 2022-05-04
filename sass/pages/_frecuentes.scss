@@ -61,6 +61,13 @@
 }
 }
 
+@media screen and (max-width: 1001px){
+    .principal-pregunta .container1 img {
+        width: 100%;
+        height: 320px;
+    }
+}
+
 @media screen and (max-width: 768px){
     .principal-pregunta .container img {
         width: 100%;
